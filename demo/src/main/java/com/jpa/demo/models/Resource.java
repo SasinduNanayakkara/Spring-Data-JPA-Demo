@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+//@Builder
 @Entity
-public class Resource {
+public class Resource extends BaseEntity {
 
     @Id
     @GeneratedValue

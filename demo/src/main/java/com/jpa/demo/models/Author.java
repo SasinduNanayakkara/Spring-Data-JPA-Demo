@@ -1,6 +1,10 @@
 package com.jpa.demo.models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Column;
+import jakarta.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor
 //@Builder
 @SuperBuilder
-public class Author {
+public class Author extends BaseEntity {
 
     @Id
     @GeneratedValue

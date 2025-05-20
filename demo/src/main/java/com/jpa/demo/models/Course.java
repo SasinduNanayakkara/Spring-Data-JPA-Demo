@@ -12,9 +12,9 @@ import java.util.List;
 @Data
 @Entity
 @AllArgsConstructor
-@Builder
+//@Builder
 @NoArgsConstructor
-public class Course {
+public class Course extends BaseEntity {
 
     @Id
     @GeneratedValue
